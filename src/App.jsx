@@ -3,15 +3,16 @@ import "./App.css";
 import CountArray from "./components/Array";
 import Button from "./components/Button";
 import User from "./components/user";
+import Number from "./components/Form";
 //import {Table} from "./components/Table";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
   return (
     <>
       {/* <Table/> */}
-      <User count={count} />
-      <Button count={count} setCount={setCount} />
+      <Number/>
+      {/* <Button count={count} setCount={setCount} /> */}
     </>
   );
 }
