@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import Button from "./Button";
+//import Button from "./Button";
+import Table from "./Table";
 const User = ({ count }) => {
   const [userData, setUserData] = useState([]);
   useEffect(() => {
@@ -11,15 +12,7 @@ const User = ({ count }) => {
     };
     fetchUser();
   }, [count]);
-  return (
-    <div>
-      {userData.map((user) => (
-        <h2 key={user.id}>
-          {user.firstName} {user.lastName}
-        </h2>
-      ))}
-    </div>
-  );
+  return <Table person={userData}/>;
 };
 
 export default User;
